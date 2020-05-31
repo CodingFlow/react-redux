@@ -1,10 +1,12 @@
 import { addMeow } from '../actions/addMeow'
 import { connect } from 'react-redux'
 import CatInfo from '../components/CatInfo'
+import { createSelector } from 'reselect'
 
-const mapStateToProps = (state) => {
-  return state.cat
-}
+const getCat = (state) => state.cat
+const memoizedGetCat = createSelector([getCat], (cat) => cat)
+
+const mapStateToProps = memoizedGetCat
 
 const mapDispatchToProps = (dispatch) => {
   return {

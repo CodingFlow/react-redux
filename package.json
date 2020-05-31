@@ -15,7 +15,8 @@
     "react-dom": "^16",
     "react-hot-loader": "^4",
     "react-redux": "^7.2.0",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "reselect": "^4.0.0"
   },
   "devDependencies": {
     "@neutrinojs/jest": "^9.1.0",
