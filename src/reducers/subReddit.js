@@ -11,6 +11,8 @@ const subReddit = (state = {}, action) => {
         isFetching: false,
         posts: action.posts
       })
+    default:
+      return state
   }
 }
 
